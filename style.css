@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+* {
+	padding: 0;
+	margin: 0;
+}
+button 
+{
+	font-family: Amatic SC;
+}
+body 
+{ 
+	font-family: Amatic SC;
+	line-height: 1.88889;
+	background-image: url(Disney_background3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-origin: border-box
+	background-size: contain;
+}
+h2
+{
+	font-size: 100px;
+	text-align: center;
+	color: snow;
+	margin: 0px;
+	padding: 0px;
+	position: absolute center top;
+	font-family: Amatic SC;
+}
+.container{overflow:hidden; width: 100%; position: top;}
+.Princess
+{
+	background: rgba(245, 253, 255, 0.6);
+	margin: 66px; padding: 50px;
+	margin-right: 70px;
+	float: left;
+	text-align: center;
+	font-size: 40px;
+	color: #000;
+	width: 30%;
+	line-height: 120%;
+}
+.Media
+{ 
+	float: right;
+	margin: 0px; padding: 10px;
+}
+.Princess1 
+{
+	background: rgba(245, 253, 255, 0.6);
+	margin-right:100px;
+	margin-bottom: 180px;
+	padding: 50px;
+	width: 30%;
+	margin-left: 20px;
+}
+.Princess2
+{
+	background: rgba(245, 253, 255, 0.6);
+	margin-right:100px;
+	margin-bottom: 20px;
+	padding: 50px;
+	width: 30%;
+	margin-left: 20px;
+}
+.Princess3
+{
+	background: rgba(245, 253, 255, 0.6);
+	margin-right:100px;
+	margin-bottom: 153px;
+	padding: 50px;
+	width: 30%;
+	margin-left: 20px;
+}
+.text
+{
+	background: rgba(245, 253, 255, 0.6);
+	margin-right: 50px;
+	padding: 50px;
+	width: 40%;
+	float: right;
+	font-size: 20px;
+	margin-bottom: 0px
+}
+.text1
+{
+	background: rgba(245, 253, 255, 0.6);
+	margin-right: 50px;
+	padding: 50px;
+	width: 40%;
+	float: right;
+	font-size: 25px;
+	margin-bottom: 0px;
+}
+.Copy
+{
+	color: #fff;
+	position: absolute;
+	right:0;
+}
+a 
+{ 
+	text-decoration: none; 
+	color: black; 
+	position: relative; 
+	transition: 0.5; 
+} 
+a::before 
+{ 
+	content: ''; 
+	bottom: 0; 
+	left: 0; 
+	position: absolute; 
+	width: 0%; 
+	height: 2px; 
+	background-color: DeepSkyBlue; 
+	transition: 0.5s; 
+} 
+.dropdown a:hover:before
+{ 
+	width: 100%;
+
+} 
+
+/* —---------— Menu —----------— */ 
+.dropdown-child a 
+{ 
+	color: white; 
+	text-decoration: none; 
+	display: inline-block; 
+	transform: translateY(50%); 
+	padding-right: 25px; 
+} 
+.ddn-2 a 
+{ 
+	padding-top: 5%; 
+} 
+.mainmenubtn 
+{ 
+	background: rgba(245, 253, 255, 0.6);
+	font-family: Amatic SC;
+	color: black; 
+	font-size: 30px; 
+	border: none; 
+	cursor: pointer; 
+	padding: 5px; 
+	width: 100%; 
+	height: 100%; 
+} 
+.undermenu-1, .undermenu-2 
+{ 
+	background: rgba(245, 253, 255, 0.6);
+	color: black; 
+	font-weight: 600; 
+	font-size: 20px; 
+	border: none; 
+	cursor: pointer; 
+	padding: 2px; 
+	width: 100%; 
+} 
+.dropdown 
+{ 
+	font-family: Amatic SC;
+	position: relative; 
+	display: inline-block;  
+} 
+.dropdown-child 
+{ 
+	transform: translateX(100%) translateY(-200%); 
+	transition: 0.5s; 
+	position: relative; 
+} 
+.ddn-1, .ddn-2 
+{ 
+	display: block; 
+	width: 100%; 
+	padding-left: 0%; 
+	padding-right: 0%; 
+	margin-right: 0%; 
+} 
+.ddn-2 {
+	transform: translateY(-10%);
+}
+.dropdown:hover .dropdown-child 
+{ 
+	transform: translateX(100%) translateY(-50%); 
+	transition: 0.5s; 
+} 
+.dropdown-child-1, .dropdown-child-2 
+{ 
+	display: inline-block; 
+	position: absolute; 
+	transform: rotateX(180deg); 
+	backface-visibility: hidden;
+} 
+.dropdown a {
+	display: block;
+	background: rgba(245, 253, 255, 0.6);
+	color: black;
+	padding: 
+}
+.ddn-1:hover .dropdown-child-1
+{ 
+	transform: translateX(50%) translateY(-50%); 
+	display: inline-block; 
+	width: 200%; 
+	height: 100%; 
+} 
+.ddn-2:hover .dropdown-child-2
+{ 
+	transform: translateX(50%) translateY(-100%); 
+	display: inline-block; 
+	width: 200%; 
+	height: 100%; 
+} 
+@media print 
+{
+	img
+	{ 
+		display: none; 
+	} 
+	.dropdown-child-1, .dropdown-child-2, .mainmenubtn
+	{
+		display: none;
+	}
+}
